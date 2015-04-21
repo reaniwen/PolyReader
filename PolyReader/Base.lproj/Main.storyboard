@@ -91,8 +91,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6tx-j9-gpo">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <color key="barTintColor" red="0.32549019610000002" green="0.1843137255" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem id="4et-cE-0dc">
+                                        <barButtonItem key="leftBarButtonItem" image="backbutton.png" id="YKE-h4-8Gx">
+                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iXv-Rr-DbS">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="72" width="320" height="568"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9jm-hl-Khl">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -109,7 +120,7 @@
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsk-B3-wex">
                                                 <rect key="frame" x="40" y="207" width="240" height="128"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -140,23 +151,27 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iXv-Rr-DbS" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="73q-2G-hUS"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="iXv-Rr-DbS" secondAttribute="bottom" id="MsK-re-8hH"/>
+                            <constraint firstItem="iXv-Rr-DbS" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="72" id="73q-2G-hUS"/>
+                            <constraint firstItem="6tx-j9-gpo" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="FPT-iO-cKl"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="iXv-Rr-DbS" secondAttribute="bottom" constant="-72" id="MsK-re-8hH"/>
                             <constraint firstItem="9jm-hl-Khl" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="Xvr-t9-4K8"/>
                             <constraint firstItem="9jm-hl-Khl" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" priority="250" id="YEU-Sc-bKc"/>
+                            <constraint firstAttribute="centerX" secondItem="6tx-j9-gpo" secondAttribute="centerX" id="gG5-Dk-yAP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iXv-Rr-DbS" secondAttribute="trailing" constant="-16" id="gto-Px-Tdp"/>
+                            <constraint firstItem="6tx-j9-gpo" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="u2v-bP-gWK"/>
                             <constraint firstItem="iXv-Rr-DbS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="xtP-ut-KCm"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bodyTextView" destination="Rsk-B3-wex" id="IGY-zq-0qv"/>
+                        <outlet property="navigationBar" destination="6tx-j9-gpo" id="gsC-5v-EdI"/>
                         <outlet property="newImage" destination="lpF-wX-jSl" id="1mP-OY-np7"/>
                         <outlet property="topicLabel" destination="r4m-a6-gTj" id="GG0-em-TeC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1072" y="187"/>
+            <point key="canvasLocation" x="1071" y="187"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WIb-jD-X1r">
@@ -184,6 +199,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="i72-MO-Guy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.32549019610000002" green="0.1843137255" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -196,6 +212,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backbutton.png" width="22" height="22"/>
         <image name="logo-poly" width="420" height="420"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

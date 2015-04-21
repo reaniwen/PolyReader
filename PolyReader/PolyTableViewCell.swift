@@ -11,7 +11,7 @@ import UIKit
 class PolyTableViewCell: UITableViewCell {
     @IBOutlet weak var newsImage: UIImageView!
     @IBOutlet weak var newTitle: UILabel!
-    @IBOutlet weak var newsDetail: UILabel!
+    @IBOutlet weak var newsTime: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

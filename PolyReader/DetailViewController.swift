@@ -16,6 +16,7 @@ class DetailViewController: UIViewController {
     var recJson: JSON = nil
     var recImage: UIImage = UIImage()
 
+    @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var topicLabel: UILabel!
     @IBOutlet weak var newImage: UIImageView!
     @IBOutlet weak var bodyTextView: UITextView!
@@ -23,6 +24,9 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
         topicLabel.text = recJson["title"].string!
 //        bodyTextView.text = recJson["body"].string!
         let replaceString = changeStr(recJson["body"].string!, oldChrs: "\r\n", newChrs: "MYOWNCHGLINE")

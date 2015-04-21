@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9AD3A03B-5695-47D2-AE76-3B38D32285EC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PolyReader</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3A362863D5943043BC6275A9ACE62DD5CDDABB73</key>
+		<string>https://github.com/reaniwen/PolyReader.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PolyReader.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3A362863D5943043BC6275A9ACE62DD5CDDABB73</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/reaniwen/PolyReader.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3A362863D5943043BC6275A9ACE62DD5CDDABB73</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3A362863D5943043BC6275A9ACE62DD5CDDABB73</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PolyReader</string>
+		</dict>
+	</array>
+</dict>
+</plist>

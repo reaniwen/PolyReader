@@ -13,14 +13,8 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TdJ-ph-HL5" id="UPS-HP-YHh">
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bk-Nx-Dsh">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bk-Nx-Dsh">
                         <rect key="frame" x="109" y="8" width="187" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qk-hq-8X7">
-                        <rect key="frame" x="109" y="47" width="187" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -31,9 +25,15 @@
                             <constraint firstAttribute="width" constant="100" id="iz8-Zc-MqM"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qk-hq-8X7">
+                        <rect key="frame" x="109" y="70" width="187" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="6Qk-hq-8X7" firstAttribute="top" secondItem="UPS-HP-YHh" secondAttribute="topMargin" constant="39" id="5wH-99-utq"/>
+                    <constraint firstItem="6Qk-hq-8X7" firstAttribute="top" secondItem="UPS-HP-YHh" secondAttribute="topMargin" constant="62" id="5wH-99-utq"/>
                     <constraint firstItem="9Bk-Nx-Dsh" firstAttribute="leading" secondItem="D3s-Bq-1Nf" secondAttribute="trailing" constant="8" symbolic="YES" id="D8c-Sm-ngd"/>
                     <constraint firstAttribute="trailingMargin" secondItem="6Qk-hq-8X7" secondAttribute="trailing" constant="16" id="G2u-k9-gIp"/>
                     <constraint firstItem="D3s-Bq-1Nf" firstAttribute="bottom" secondItem="UPS-HP-YHh" secondAttribute="bottomMargin" id="SNx-ga-Vij"/>
@@ -46,8 +46,8 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="newTitle" destination="9Bk-Nx-Dsh" id="8gj-PN-gBb"/>
-                <outlet property="newsDetail" destination="6Qk-hq-8X7" id="w0n-E1-MTP"/>
                 <outlet property="newsImage" destination="D3s-Bq-1Nf" id="v0a-ga-xy4"/>
+                <outlet property="newsTime" destination="6Qk-hq-8X7" id="Kqx-6V-jSo"/>
             </connections>
             <point key="canvasLocation" x="332" y="331"/>
         </tableViewCell>
