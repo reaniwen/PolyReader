@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		175C739C1AE631560061E74F /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175C739B1AE631560061E74F /* NewsTableViewController.swift */; };
+		17511D1D1AE6EF0600E2A5EA /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17511D1C1AE6EF0600E2A5EA /* TestViewController.swift */; };
 		175C739E1AE640350061E74F /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175C739D1AE640350061E74F /* TableCell.xib */; };
 		175C73A01AE641E30061E74F /* PolyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175C739F1AE641E30061E74F /* PolyTableViewCell.swift */; };
 		175C73A21AE6427D0061E74F /* PolyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175C73A11AE6427D0061E74F /* PolyTableViewController.swift */; };
@@ -33,7 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		175C739B1AE631560061E74F /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		17511D1C1AE6EF0600E2A5EA /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		175C739D1AE640350061E74F /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
 		175C739F1AE641E30061E74F /* PolyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolyTableViewCell.swift; sourceTree = "<group>"; };
 		175C73A11AE6427D0061E74F /* PolyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolyTableViewController.swift; sourceTree = "<group>"; };
@@ -97,10 +97,10 @@
 		17F7E2281AE613770037D185 /* PolyReader */ = {
 			isa = PBXGroup;
 			children = (
+				17511D1C1AE6EF0600E2A5EA /* TestViewController.swift */,
 				17F7E22B1AE613770037D185 /* AppDelegate.swift */,
 				17F7E22D1AE613780037D185 /* DetailViewController.swift */,
 				17F7E22F1AE613790037D185 /* Main.storyboard */,
-				175C739B1AE631560061E74F /* NewsTableViewController.swift */,
 				175C73A11AE6427D0061E74F /* PolyTableViewController.swift */,
 				175C739F1AE641E30061E74F /* PolyTableViewCell.swift */,
 				175C739D1AE640350061E74F /* TableCell.xib */,
@@ -310,8 +310,8 @@
 				17F7E22E1AE613780037D185 /* DetailViewController.swift in Sources */,
 				175C73A01AE641E30061E74F /* PolyTableViewCell.swift in Sources */,
 				17F7E22C1AE613770037D185 /* AppDelegate.swift in Sources */,
-				175C739C1AE631560061E74F /* NewsTableViewController.swift in Sources */,
 				175C73A41AE6B4900061E74F /* DecodeHTML.swift in Sources */,
+				17511D1D1AE6EF0600E2A5EA /* TestViewController.swift in Sources */,
 				175C73A21AE6427D0061E74F /* PolyTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

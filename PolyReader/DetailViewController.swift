@@ -17,17 +17,26 @@ class DetailViewController: UIViewController {
     var recImage: UIImage = UIImage()
 
     @IBOutlet weak var navigationBar: UINavigationBar!
+    
     @IBOutlet weak var topicLabel: UILabel!
     @IBOutlet weak var newImage: UIImageView!
     @IBOutlet weak var bodyTextView: UITextView!
+    @IBOutlet weak var TeaserTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         
-        
         topicLabel.text = recJson["title"].string!
+        
+        let img = recJson["image"].string ?? ""
+        let imgURL = NSURL(string: img)
+        newImage.contentMode = UIViewContentMode.ScaleAspectFit
+        newImage.setImageWithURL(imgURL)
+        
+        TeaserTextView.text = recJson["teaser"].string!
+        
 //        bodyTextView.text = recJson["body"].string!
         let replaceString = changeStr(recJson["body"].string!, oldChrs: "\r\n", newChrs: "MYOWNCHGLINE")
         let decodedreplaceStr = replaceString.htmlToString
@@ -35,11 +44,7 @@ class DetailViewController: UIViewController {
         println(decodedString)
         bodyTextView.text = decodedString
         
-        let img = recJson["image"].string ?? ""
-        let imgURL = NSURL(string: img)
-        
-        newImage.contentMode = UIViewContentMode.ScaleAspectFit
-        newImage.setImageWithURL(imgURL)
+
         
     }
 
@@ -53,6 +58,10 @@ class DetailViewController: UIViewController {
 //        let newString11 = aString.stringByReplacingOccurrencesOfString(" ", withString: "+", options: NSStringCompareOptions.LiteralSearch, range: nil)
         return newString
         
+    }
+    
+    @IBAction func close(){
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
 

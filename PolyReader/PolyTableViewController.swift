@@ -24,6 +24,8 @@ class PolyTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UINavigationBar.appearance().setBackgroundImage(UIImage(named: "barImage2")!.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 0, 0, 0), resizingMode: .Stretch), forBarMetrics: .Default)
+        
         var nib = UINib(nibName: "TableCell", bundle: nil)
         tableView.registerNib(nib, forCellReuseIdentifier: "customCell")
         
